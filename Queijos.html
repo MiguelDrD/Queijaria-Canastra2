@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AD1 de construção de paginas web</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Karla|Stoke"rel="stylesheet"/>
+    <script src="queijos.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <address class="ender">
+        Av.gorgonzola 235<br />
+        Tel: (21)91235-1235<br />
+        <a class="link-cabeçalho">contato@canastrao.com.br</a>
+      </address>
+
+      <img class="imgLogo" src="CanastraoLogoTopo.png" /><br />
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="CanastraoQueijos.html">Apresentação</a></li>
+        <li><a href="Queijos.html">Queijos</a></li>
+        <li><a href="Harmonizacao.html">Harmonização</a></li>
+        <li><a href="Pedidos.html">Pedidos</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <br />
+      <table class="tabQueijo">
+        <tr>
+          <th class="linTH" colspan="5">Queijos</th>
+        </tr>
+
+        <tr>
+          <th class="linTH">Procedência</th>
+          <th class="linTH">Tipo</th>
+          <th class="linTH">Descrição</th>
+        </tr>
+
+        <tr>
+          <th rowspan="3" class="colTH">Nacional</th>
+          <td><a href="javascript:mostra(0)">Canastra</a></td>
+          <td class="Desc" rowspan="5">
+            <h3 id="tipQueijo"></h3>
+            <img id="imgQueijo" src="vazio_150.png" class="HarmoImg" />
+            <p id="pesoQueijo"></p>
+            <p id="prcQueijo"></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="javascript:mostra(1)">Minas</a></td>
+        </tr>
+
+        <tr>
+          <td><a href="javascript:mostra(2)">Coalho</a></td>
+        </tr>
+        <tr>
+          <th rowspan="2" class="colTH">Internacional</th>
+          <td><a href="javascript:mostra(3)">Gorgonzola</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="javascript:mostra(4)">Brie</a></td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>

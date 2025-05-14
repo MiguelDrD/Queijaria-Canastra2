@@ -1,0 +1,309 @@
+
+
+body {
+    color:#3366BB;
+    font-size: 16px;
+    background-color:  #EEDDAA;
+    font-family: stoke, Lucida Bright, liberation;
+    }
+
+header {
+    display:block;
+    margin-bottom: 1px;
+    }
+
+nav {
+    display:block;
+    width: 20%;
+    float: left;
+    }
+section {
+    display:block;
+    width: 70%;
+    float: right;
+    }
+
+
+a:link { color:#2255AA; text-decoration:none; }
+a:visited { color:#2255CC; text-decoration:none; }
+
+ol { line-height: 200%; }
+ul { line-height: 200%; }
+
+nav ul {
+    color: #3366BB;
+    margin-top: 40px;
+    line-height: 230%;
+    list-style-type: disc;
+    }
+
+.ender {
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    line-height: 140%;
+    font-family: karla, verdana, ubuntu;
+
+
+    }
+
+.imgLogo {
+    padding-bottom: 15px;
+    border-bottom: 4px solid #3366BB;
+    margin-bottom: 6px;
+    }
+
+.apres {
+    text-align: center;
+    font-size: 16px;
+    }
+
+
+
+
+
+/**************************
+*Harmonização de queijos*/
+
+.Titulo {
+    text-align: center;
+    }
+
+.listaQueijo {
+    width: 440px;
+    color: #3366BB;
+    background-color: #FFFFBB;
+    padding: 10px;
+    border: 2px solid #3366BB;
+    margin: 0px auto 10px auto;
+    }
+
+ul{
+    color: #3366BB;
+    font-size: 14px;
+    list-style-type: disc;
+}
+
+h4{
+    font-size: 14px;
+    text-decoration: none;
+    }
+
+.procedencia{
+    text-decoration: underline;
+}
+
+
+
+
+/************************
+Tabela de Queijos*/
+
+.tabQueijo {
+    border-collapse: collapse;
+    margin-top: 6px;
+    font-size: 15px;
+    background-color: #FFFFBB;
+    color: #114499;
+    font-family: karla, verdana, ubuntu;
+    }
+
+.tabQueijo th {
+    border: 2px solid #000000;
+    padding: 6px 12px 6px 12px;
+    }
+    
+.tabQueijo td {
+    border: 2px solid #000000;
+    padding: 6px 12px 6px 12px;
+    }
+    
+.tabQueijo .linTH {
+    color: #EEEE00;
+    vertical-align: middle;
+    background-color: #887733;
+    text-align: center;
+    }
+
+.tabQueijo .colTH {
+    color: #222222;
+    text-align: left;
+    background-color: #CCBB88;
+    }
+
+.tabQueijo .preco {
+    color: #CC0000;
+    }
+
+.imgQueijo img {
+    width: 60px;
+    height: 44px;
+    }
+
+
+
+/*******************
+Formulário*/
+
+/* Box de compras */
+.divCompras {
+    width: 550px;
+    color: #2255AA;
+    background-color: #FFFFBB;
+    padding: 6px 6px 15px 6px;
+    font-size: 12px;
+    margin: 20px auto 20px auto;
+    border: 2px solid #000000;
+    }
+
+
+/*Lista de compras localizada no lado direito*/
+.listaCompras {
+    width: 210px;
+    height: 160px;
+    float: right;
+    margin-top: 2px;
+    margin-left: 10px;
+    }
+
+
+/*botões de enviar e limpar*/
+.botoes {
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+    }
+
+
+
+ /*display do cartão*/
+.fsEsq {
+    float: left;
+    display: inline;
+    margin: 0px;
+    }
+ 
+/*display de genero e nascimento*/    
+.fsDir {
+    float: right;
+    display: inline;
+    margin: 0px;
+    }
+
+
+
+/**Inputs do nome e email**/
+.inpGrande { width: 380px; }
+
+/**input do valor**/
+.impMedio { width: 80px; }
+
+/**input do numero**/
+.impNCC {width: 130px;}
+
+/** input do telefone **/
+.impTelef {width: 90px;}
+
+/** input do endereço**/
+.impEnder {width: 180px; height: 50px;}
+
+/**inputs da validade**/
+.numDD { width:30px;}
+.numQD { width:50px;}
+
+
+
+/*identificadores de bandeira, validade e número*/
+.colLabCrd {
+    width: 260px;
+    height: 40px;
+    float: left;
+    text-align: left;
+    }
+
+.colLabSelProd {
+    width: 230px;
+    height: 40px;
+    float: left;
+    }
+
+/*identificadores de nome, email, endereço e celular*/
+.colPri {
+    float: left;
+    width: 90px;
+    display: block;
+    }
+
+.colPriPag {
+    float: left;
+    width: 250px;
+    display: block;
+    }
+
+/*coluna referente a lista de compras*/
+.colSelProd{
+    width: 160px;
+    float: right;
+    }
+
+.colPriCompras{
+    float: left;
+    display: block;
+    width: 86px;
+    }
+
+/*Espaço entre as linhas dos identificadores*/
+.divLinha{
+    width: 500px;
+    margin-bottom: 6px;
+    }
+
+/*Linha referente aos produtos selecionados*/
+.linhaProdSel{
+    width: 220px;
+    margin-bottom: 6px;
+    float: left;
+    }
+
+/*Referente ao telefone e celular */
+.elemEsq{
+    display: block;
+    float: left;
+    }
+
+/*referente ao valor*/
+.elemDir{
+    display: block;
+    float: right;
+    }
+
+
+
+
+
+/*AD2 */
+
+/*Janela*/
+
+.janQueijos{
+    width: 440px;
+    text-align: center;
+    font-size: 14px;
+    color: #3366BB;
+    background-color: #FFFFBB;
+    padding: 10px;
+    border: 2px solid #3366BB;
+    margin: 0px auto 10px auto;
+}
+
+.janDesc{
+    text-align: left;
+}
+
+.HarmoImg{
+    width: 120px;
+    height: 88px;
+}
+
+.menuTab{
+ height: 45px;
+}

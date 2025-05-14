@@ -1,0 +1,135 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>AD1 de construção de paginas web</title>
+        <base target="_blank" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Karla|Stoke'rel='stylesheet'>
+        <script src="queijos.js"></script>
+</head>
+
+<body>
+
+<header>
+    <address class="ender">
+        Av.gorgonzola 235<br>
+        Tel: (21)91235-1235<br>
+        <a class="link-cabeçalho">contato@canastrao.com.br</a>
+    </address>
+
+    <img class="imgLogo" src="CanastraoLogoTopo.png"/><br/>
+
+</header>
+
+    <nav>
+        <ul>
+            <li><a href="CanastraoQueijos.html">Apresentação</a></li>
+            <li><a href="Queijos.html">Queijos</a></li>
+            <li><a href="Harmonizacao.html">Harmonização</a></li>
+            <li><a href="Pedidos.html">Pedidos</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        
+        <form class="divCompras" method="POST">
+            <h3>Compras</h3>
+                <fieldset><legend> Identificação&nbsp;</legend>
+
+            <div class="divLinha">
+                    <label class="colPri">Nome: </label>
+                    <input type="text" class="inpGrande"name="TxtNomeCompleto" />
+            </div>
+
+            <div class="divLinha">
+                <label for="idEmail" class="colPri">E-mail:</label>
+                <input id="idEmail" class="inpGrande"type="email" name="TxtEmail" required />
+            </div>
+
+            <div class="divLinha">
+                <label class="colPri">Endereço: </label>
+                <textarea name="TxtEnder" class="impEnder"></textarea>
+
+                <fieldset class="fsDir"><legend>Genero:</legend>
+                <label><input type="radio" name="TglSexo"value="M" checked />Mas</label>
+                <label><input type="radio" name="TglSexo"value="F" />Fem</label>
+                <label><input type="radio" name="TglSexo"value="O" />Outro</label>
+                </fieldset>
+            
+                <fieldset class="fsDir"><legend>Nacimento:</legend>
+                    <input type="number" name="TxtDiaNasc"min="1" max="31" class="numDD" /> /
+                    <input type="number" name="TxtMesNasc"min="1" max="12" class="numDD" /> /
+                    <input type="number" name="TxtAnoNasc"min="1925" max="2025" class="numQD" /> 
+                </fieldset>
+            </div>
+
+            <div class="elemEsq">
+                    <p><label class="colPri">Telefone:</label>
+                    <input type="text" class="impTelef"name="TxtTelefone" required /></p>
+
+                    <label class="colPri">Celular:</label>
+                    <input type="text" class="impTelef"name="TxtCelular" />
+            </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Seleção de Produtos e Pagamento&nbsp;</legend>
+
+            <div>
+                <Select name="selProduto" id="selProduto">
+                        
+                    <option> ----- </option>
+                    <optgroup label="Nacional">
+                    <option>Canastra (500g)</option>
+                    <option>Queijo Minas (400g)</option>
+                    <option>Queijo Coalho (500g)</option></optgroup>
+                    <optgroup label="Internacional">
+                    <option>Gorgonzola (200g)</option>
+                    <option>Queijo Brie (200g)</option>
+                </select>
+                    <input type="button" value="Incluir" onClick="IncluiLista( this.form.selProduto );"/>
+            
+                    <textarea class="listaCompras" name="listaPedidos"readonly>
+                    </textarea><br><br>
+            </div>
+
+                <fieldset class="fsEsq"><legend> Cartão&nbsp;</legend>
+                    <label class="fsEsq" >Bandeira:
+                    <label><input type="radio" name="RadBand" checked />Visa</label>
+                    <label><input type="radio" name="RadBand" />Master</label>
+                    <label><input type="radio" name="RadBand" />Elo</label></label><br><br><br>
+            
+            <div>
+                    <label class="colLabSelProd" for="mesVal">Validade:&nbsp;&nbsp;&nbsp;
+                    <input type="number" name="TxtMesVal" id="mesVal"min="1" max="12" class="numDD" value="1" /> /
+                    <input type="number" name="TxtAnoVal" value="2025"min="2025" max="2099" class="numQD" /></label><br/><br>
+            </div>
+            <div>
+                    <label class="colLabSelProd" for="numCar">Número:&nbsp;&nbsp;&nbsp;
+                    <input type=text name="TxtNumCard"class="impNCC" id="numCar"/></label><br><br>
+                </fieldset><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+
+                <label class="elemEsq" for="numCar">CPF:
+                <input type=text name="CPF"class="impNCC" onChange="VerificaCPF(this);" id="CPF"/></label>
+
+                    <label class="elemDir" for="TxtTotal"><br/>Valor R$
+                    <input type="text" name="TxtTotal" readonly id="TxtTotal" class="impMedio" /></label>
+                </fieldset>
+            
+            <div class="botoes">
+                    <input type="submit" value="Comprar" /> 
+                    <input type="reset" value="Limpar" /> 
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>
